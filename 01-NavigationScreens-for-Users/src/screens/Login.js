@@ -8,12 +8,11 @@ export default function Login() {
   const [password, setPassword] = React.useState('');
 
   const handleLoginPress = () => {
-    // Lógica de login
+    
     console.log('username:', username);
     console.log('password:', password);
 
-    // Navegando para a tela Home
-    navigation.navigate('Home', {username});
+    navigation.navigate('Home', { username });
   };
 
   return (
