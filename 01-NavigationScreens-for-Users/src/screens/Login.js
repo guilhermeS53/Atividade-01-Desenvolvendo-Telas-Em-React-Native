@@ -13,27 +13,27 @@ export default function Login() {
     console.log('password:', password);
 
     // Navegando para a tela Home
-    navigation.navigate('Home');
+    navigation.navigate('Home', {username});
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Faça Login</Text>
+      <Text style={styles.title}>To continue, please, log in to the system</Text>
       <TextInput
-        style={styles.input}
-        placeholder="Usuário"
+        style={[styles.input, { width: 300 }]}
+        placeholder="User"
         value={username}
         onChangeText={setUsername}
       />
       <TextInput
-        style={styles.input}
-        placeholder="Senha"
+        style={[styles.input, { width: 300 }]}
+        placeholder="Password"
         secureTextEntry={true}
         value={password}
         onChangeText={setPassword}
       />
       <TouchableOpacity style={styles.button} onPress={handleLoginPress}>
-        <Text style={styles.buttonText}>Entrar</Text>
+        <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
     </View>
   );
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   title: {
-    fontSize: 24,
+    fontSize: 35,
     fontWeight: 'bold',
     marginBottom: 20,
   },
@@ -58,12 +58,11 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 8,
     marginVertical: 8,
-    width: '100%',
   },
   button: {
     backgroundColor: '#2196F3',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
+    paddingVertical: 5,
+    paddingHorizontal: 10,
     borderRadius: 5,
   },
   buttonText: {
