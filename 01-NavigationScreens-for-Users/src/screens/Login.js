@@ -1,3 +1,4 @@
+// Importação das bibliotecas do React
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -38,23 +39,24 @@ export default function Login() {
   );
 }
 
+// Abaixo segue estilização da tela.
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 16,
+    padding: 18,
   },
   title: {
-    fontSize: 35,
+    fontSize: 34,
     fontWeight: 'bold',
     marginBottom: 20,
   },
   input: {
     borderWidth: 1,
     borderColor: '#ccc',
-    borderRadius: 5,
+    borderRadius: 15,
     padding: 8,
     marginVertical: 8,
   },
@@ -62,10 +64,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#107184',
     paddingVertical: 5,
     paddingHorizontal: 10,
-    borderRadius: 5,
+    borderRadius: 15,
   },
   buttonText: {
     color: '#fff',
-    fontSize: 18,
+    fontSize: 17,
   },
 });

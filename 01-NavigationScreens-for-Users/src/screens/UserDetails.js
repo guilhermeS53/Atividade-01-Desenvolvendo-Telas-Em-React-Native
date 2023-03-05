@@ -1,3 +1,4 @@
+// Importação das bibliotecas do React
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
@@ -14,6 +15,7 @@ const UserDetails = ({ route }) => {
     );
 };
 
+// Abaixo segue estilização da tela.
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -33,6 +35,9 @@ const styles = StyleSheet.create({
     },
     version: {
         fontSize: 16,
+    },
+    button: {
+        backgroundColor: '#107184',
     },
 });
 

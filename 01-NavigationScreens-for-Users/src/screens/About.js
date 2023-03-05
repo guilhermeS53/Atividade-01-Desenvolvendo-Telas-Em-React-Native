@@ -1,3 +1,4 @@
+// Importação das bibliotecas do React
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -12,6 +13,7 @@ export default function AboutScreen() {
     );
 }
 
+// Abaixo segue estilização da tela.
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -31,5 +33,8 @@ const styles = StyleSheet.create({
     },
     version: {
         fontSize: 16,
+    },
+    button: {
+        backgroundColor: '#107184',
     },
 });
