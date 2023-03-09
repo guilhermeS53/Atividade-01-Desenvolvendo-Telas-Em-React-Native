@@ -1,6 +1,7 @@
 // Importação das bibliotecas do React
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
+import styles from './style'
 
 const HomeScreen = ({ navigation, route }) => {
   const { username, name, age, email } = route.params;
@@ -34,35 +35,5 @@ const HomeScreen = ({ navigation, route }) => {
     </View>
   );
 };
-
-// Abaixo segue estilização da tela.
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 35,
-    fontWeight: 'bold',
-    marginBottom: 30,
-  },
-  text: {
-    fontSize: 18,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  buttonsContainer: {
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  button: {
-    marginVertical: 10,
-    paddingHorizontal: 10,
-    borderRadius: 15,
-    backgroundColor: '#107184',
-  },
-});
 
 export default HomeScreen;
