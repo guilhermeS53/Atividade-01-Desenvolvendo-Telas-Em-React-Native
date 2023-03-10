@@ -16,4 +16,4 @@ const UserDetails = ({ route }) => {
     );
 };
 
-export default UserDetails;
+export { UserDetails };
