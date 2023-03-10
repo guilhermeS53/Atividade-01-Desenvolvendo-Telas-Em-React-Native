@@ -1,5 +1,3 @@
-import { StyleSheet } from "react-native";
-
 // Abaixo segue estilização da tela.
 const styles = StyleSheet.create({
     container: {
@@ -33,4 +31,4 @@ const styles = StyleSheet.create({
     },
   });
 
-  export default styles 
+  export { styles }
