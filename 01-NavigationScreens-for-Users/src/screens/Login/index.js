@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-nativ
 import { useNavigation } from '@react-navigation/native';
 import styles from './style'
 
-  function Login() {
+export default function Login() {
   const navigation = useNavigation();
   const [username, setUsername] = React.useState('');
   const [password, setPassword] = React.useState('');
@@ -39,5 +39,3 @@ import styles from './style'
     </View>
   );
 }
-
-export default Login;

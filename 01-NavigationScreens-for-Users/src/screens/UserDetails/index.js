@@ -1,6 +1,7 @@
 // Importação das bibliotecas do React
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import AboutScreen from '../About';
 import styles from './style'
 
 const UserDetails = ({ route }) => {
@@ -16,4 +17,4 @@ const UserDetails = ({ route }) => {
     );
 };
 
-export { UserDetails };
+export default UserDetails

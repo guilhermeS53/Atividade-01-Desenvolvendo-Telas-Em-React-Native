@@ -23,5 +23,3 @@ const styles = StyleSheet.create({
         backgroundColor: '#107184',
     },
 });
-
-export { styles }
